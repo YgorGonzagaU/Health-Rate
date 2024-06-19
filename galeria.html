@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link href="css/style.css" rel="stylesheet"/> 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L6J36DH4R9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L6J36DH4R9');
+</script>
+</head>
+<style>
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagem {
+  margin: 10px;
+  position: relative;
+}
+
+.imagem img {
+  width: 500px; 
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imagem:hover figcaption {
+  opacity: 1;
+  top: 0; 
+  border-radius: 10px;
+}
+
+ 
+h1{
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            border: 1px solid #ccc; 
+            padding: 10px;
+            width: 90%; 
+            margin: auto;
+            margin-bottom: 60px;
+            margin-top: 20px;
+        }
+        .container img {
+            max-width: 100px; 
+            height: auto; 
+        }
+        .container .text {
+            flex: 1; 
+        }
+</style>
+<body style="background-color: rgb(38, 201, 223);">
+    
+    <header>
+            <nav class="navbar">
+                <div class="logo"><a href="index.html"> <img src="img/logohr.png" width="120" /></a></div>
+               <ul class="nav-links"> </li>      
+                  <li> <a href="sobre-nos.html" style="text-decoration: none;">Conheça</a></li>   
+                          <li> <a href="exames.html" style="text-decoration: none;">Exames</a></li>    
+                              <li> <a href="profissionais.html" style="text-decoration: none;">Profissionais</a></li>    
+                                  <li>  <a href="consultas.html"style="text-decoration: none;">Consulta</a></li>    
+                                      <li> <a href="avaliacao.html" style="text-decoration: none;">Avalie</a></li>    
+             </ul>
+              </nav>
+          </header>
+          <h1> Galeria de imagens</h1>
+          <div class="galeria">
+            <div class="imagem">
+              <img src="img/card1.jpg" alt="Descrição da imagem 1">
+              <figcaption>Biomedicina</figcaption>
+            </div>
+            <div class="imagem">
+              <img src="img/card2.jpg" alt="Descrição da imagem 2">
+              <figcaption>Odontologia</figcaption>
+            </div>
+            <div class="imagem">
+                <img src="img/card3.jpg" alt="Descrição da imagem 2">
+                <figcaption>Pediatria</figcaption>
+            </div>
+              <div class="imagem">
+                <img src="img/card4.jpg" alt="Descrição da imagem 2">
+                <figcaption>Cardiologia</figcaption>
+              </div>
+              <div class="imagem">
+                <img src="img/card5.jpg" alt="Descrição da imagem 2">
+                <figcaption>Cirurgias</figcaption>
+              </div>
+            </div>  
+            <div class="container">
+              <div class="text">
+                  <p>@ 2024 Universidade de Uberaba<br> Curso de Análise e desenvolvimento de sistemas <br> Tecnologias para a Internet I</p>
+              </div>
+              <img src="img/uniube.png" alt="Exemplo de Imagem">
+          </div>
+</body>
+</html>

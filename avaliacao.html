@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Hospitalar</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L6J36DH4R9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L6J36DH4R9');
+</script>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(30, 107, 155);
+            background-size: cover;
+            color: black;
+        }
+        .container {
+            background: #fff;
+            border-radius: 14px;
+            margin: 14px;
+            max-width: 500px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 200px;
+            margin-top: 100px;
+        }
+        .form {
+            padding: 18px;
+            text-align: left;
+        }
+        .form-cons {
+            margin-bottom: 8px;
+            padding-bottom: 18px;
+            position: relative;
+        }
+        .form-cons label {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        .form-cons input, .form-cons select, .form-cons textarea {
+            display: block;
+            width: 100%;
+            border-radius: 8px;
+            padding: 8px;
+            border: 2px solid #dfdfdf;
+        }
+        .form-cons a {
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            visibility: hidden;
+            color: red;
+        }
+        .form button {
+            background-color: #0998c4;
+            color: white;
+            width: 100%;
+            border-radius: 14px;
+            padding: 10px;
+            border: 0;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 14px;
+            font-weight: bold;
+        }
+        .form-cons.error input, .form-cons.error select, .form-cons.error textarea {
+            border-color: red;
+        }
+        .form-cons.error a {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"> <img src="img/logohr.png" width="120" /></a></div>
+            <ul class="nav-links">      
+                <li><a href="sobre-nos.html" style="text-decoration: none;">Conheça</a></li>    
+                <li><a href="galeria.html" style="text-decoration: none;">Galeria</a></li>    
+                <li><a href="exames.html" style="text-decoration: none;">Exames</a></li>    
+                <li><a href="profissionais.html" style="text-decoration: none;">Profissionais</a></li>    
+                <li><a href="consultas.html" style="text-decoration: none;">Consulta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <center>
+        <div class="container">
+                <h2>Avaliação Hospitalar</h2>
+            <form id="hospitalEvaluation" class="form">
+                <div class="form-cons">
+                    <label for="hospitalName">Nome do Hospital</label>
+                    <input type="text" id="hospitalName" name="hospitalName" placeholder="Digite o nome do hospital" required>
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-cons">
+                    <label for="locationRating">Avaliação do Local</label>
+                    <select id="locationRating" name="locationRating" required>
+                        <option value="">Selecione</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="ruim">Ruim</option>
+                        <option value="pessimo">Péssimo</option>
+                    </select>
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-cons">
+                    <label for="treatmentRating">Avaliação do Tratamento</label>
+                    <select id="treatmentRating" name="treatmentRating" required>
+                        <option value="">Selecione</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="bom">Bom</option>
+                        <option value="regular">Regular</option>
+                        <option value="ruim">Ruim</option>
+                        <option value="pessimo">Péssimo</option>
+                    </select>
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-cons">
+                    <label for="doctorInteraction">Interação com o Médico</label>
+                    <textarea id="doctorInteraction" name="doctorInteraction" rows="4" placeholder="Descreva a interação com o médico" required></textarea>
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-cons">
+                    <label for="hospitalStay">Tempo de Permanência no Hospital</label>
+                    <input type="text" id="hospitalStay" name="hospitalStay" placeholder="Digite o tempo de permanência" required>
+                    <a>Mensagem de erro</a>
+                </div>
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+            <br><br>
+        </div>
+    </center>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
